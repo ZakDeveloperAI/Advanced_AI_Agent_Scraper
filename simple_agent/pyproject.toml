@@ -1,0 +1,14 @@
+[project]
+name = "simple-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.26",
+    "langchain-google-genai>=2.1.6",
+    "langchain-mcp-adapters>=0.1.8",
+    "langgraph>=0.5.1",
+    "mcp>=1.10.1",
+    "python-dotenv>=1.1.1",
+]
