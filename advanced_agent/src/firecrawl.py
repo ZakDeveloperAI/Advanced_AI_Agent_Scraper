@@ -17,18 +17,18 @@ class FirecrawlService:
                 query=f"{query} company pricing",
                 limit=num_results,
                 scrape_options=ScrapeOptions(
-                    format=["markdown"],
+                    formats=["markdown"],
                 )
             )
             return result
         except Exception as e:
             print(f"Error during search: {e}")
             return []
-    def scrape_company_pages(self, url: str):
+    def scrape_company_page(self, url: str):
         try:
             result = self.app.scrape_url(
                 url,
-                format=["markdown"],             
+                formats=["markdown"],             
             )
             return result
         except Exception as e:
